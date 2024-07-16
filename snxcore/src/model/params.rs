@@ -51,7 +51,7 @@ impl TunnelType {
     }
 
     pub fn as_client_mode(&self) -> &'static str {
-        "secure_connect"
+        "endpoint_security"
     }
 
     pub fn as_str(&self) -> &'static str {

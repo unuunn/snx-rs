@@ -388,6 +388,11 @@ impl TunnelConnector for IpsecTunnelConnector {
             secondary_realm_hash: None,
             client_logging_data: Some(ClientLoggingData {
                 os_name: Some("Windows".to_owned()),
+                os_version: Some("10".to_owned()),
+                client_name: Some("Endpoint Security VPN".into()),
+                client_ver: Some("E87.20".to_owned()),
+                client_build_number: Some("986104605".to_owned()),
+                device_type: Some("PC".to_owned()),
                 device_id: Some(crate::util::get_device_id().into()),
                 ..Default::default()
             }),
